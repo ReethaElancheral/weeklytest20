@@ -1,0 +1,124 @@
+
+.movie-app {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f88d8d;
+}
+
+.movie-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.movieh1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  border: none;
+  width: 300px;
+  max-width: 90vw;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 0.65rem 1.2rem;
+  font-size: 1.1rem;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #111;
+  transition: background-color 0.25s ease;
+}
+
+.search-bar button:hover {
+  background-color: #e6b800;
+}
+
+.loading,
+.movieerror {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.movieerror {
+  color: #ff4444;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.3rem;
+}
+
+.movie-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(255, 204, 0, 0.6);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.movie-info {
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.movie-info h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem;
+  color: #ffcc00;
+  line-height: 1.2;
+}
+
+.movie-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  color: #1a1919;
+  margin-top: auto;
+}
