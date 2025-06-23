@@ -1,4 +1,4 @@
-import { products } from "../data/Products";
+import { products } from "../data/products";
 import { ProductCard } from "./ProductCard";
 
 export function ProductList() {
