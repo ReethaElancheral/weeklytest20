@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #222;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.app.music-app {
+  display: flex;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+.music-player {
+  background: #333;
+  border-radius: 12px;
+  padding: 2rem;
+  flex: 2;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.now-playing {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.now-playing h3 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.now-playing p {
+  margin: 0;
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.controls {
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  background: transparent;
+  border: none;
+  color: #eee;
+  font-size: 2rem;
+  margin: 0 0.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.controls button:hover {
+  color: #1db954; 
+}
+
+.progress-bar {
+  appearance: none;
+  height: 6px;
+  background: #555;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #1db954;
+  cursor: pointer;
+  border: none;
+  margin-top: -4px;
+}
+
+.progress-bar::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #1db954;
+  cursor: pointer;
+  border: none;
+}
+
+.playlist {
+  background: #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex: 1;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+  color: #eee;
+}
+
+.playlist h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #555;
+  padding-bottom: 0.5rem;
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.playlist li {
+  padding: 0.7rem 0.5rem;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.playlist li:hover {
+  background-color: #444;
+}
+
+.playlist li.active {
+  background-color: #1db954;
+  font-weight: bold;
+  color: #fff;
+}
